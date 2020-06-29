@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/assure-client/static/css/main.318d15dc.chunk.css",
-    "main.js": "/assure-client/static/js/main.24b06c55.chunk.js",
-    "main.js.map": "/assure-client/static/js/main.24b06c55.chunk.js.map",
+    "main.js": "/assure-client/static/js/main.b53f6fbc.chunk.js",
+    "main.js.map": "/assure-client/static/js/main.b53f6fbc.chunk.js.map",
     "runtime-main.js": "/assure-client/static/js/runtime-main.0bcadb50.js",
     "runtime-main.js.map": "/assure-client/static/js/runtime-main.0bcadb50.js.map",
-    "static/js/2.52e42229.chunk.js": "/assure-client/static/js/2.52e42229.chunk.js",
-    "static/js/2.52e42229.chunk.js.map": "/assure-client/static/js/2.52e42229.chunk.js.map",
+    "static/js/2.5e1a73c7.chunk.js": "/assure-client/static/js/2.5e1a73c7.chunk.js",
+    "static/js/2.5e1a73c7.chunk.js.map": "/assure-client/static/js/2.5e1a73c7.chunk.js.map",
     "index.html": "/assure-client/index.html",
-    "precache-manifest.67917fe94c8f954283cb6dec873c3074.js": "/assure-client/precache-manifest.67917fe94c8f954283cb6dec873c3074.js",
+    "precache-manifest.76b716b96f77d08e5783f482aa98007b.js": "/assure-client/precache-manifest.76b716b96f77d08e5783f482aa98007b.js",
     "service-worker.js": "/assure-client/service-worker.js",
     "static/css/main.318d15dc.chunk.css.map": "/assure-client/static/css/main.318d15dc.chunk.css.map",
-    "static/js/2.52e42229.chunk.js.LICENSE.txt": "/assure-client/static/js/2.52e42229.chunk.js.LICENSE.txt",
+    "static/js/2.5e1a73c7.chunk.js.LICENSE.txt": "/assure-client/static/js/2.5e1a73c7.chunk.js.LICENSE.txt",
     "static/media/logo-coccinelle.png": "/assure-client/static/media/logo-coccinelle.01067895.png"
   },
   "entrypoints": [
     "static/js/runtime-main.0bcadb50.js",
-    "static/js/2.52e42229.chunk.js",
+    "static/js/2.5e1a73c7.chunk.js",
     "static/css/main.318d15dc.chunk.css",
-    "static/js/main.24b06c55.chunk.js"
+    "static/js/main.b53f6fbc.chunk.js"
   ]
 }
