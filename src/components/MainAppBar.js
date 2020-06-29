@@ -189,8 +189,8 @@ export default function MainAppBar() {
           <Typography className={classes.title} variant="h6" noWrap>
             Assure
           </Typography>
-            <MainSearchInput />
-            <div className={classes.grow} />
+          <MainSearchInput />
+          <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
             <IconButton aria-label="show 4 new mails" color="inherit">
               <Badge badgeContent={0} color="secondary">

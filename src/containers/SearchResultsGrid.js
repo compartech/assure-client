@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import SearchResultPanel from '../components/SearchResultPanel.js';
@@ -23,14 +23,15 @@ const listResults = [{
 
 
 export default function SearchResultsGrid(props) {
+  const [results, setResults] = useState(listResults);
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
       <Grid container spacing={1}>
-        {listResults.map((result) => (
+        {results.map((result) => (
             <Grid item xs={12} key ={result.price}>
-                  <SearchResultPanel  result={result}/>
+                  <SearchResultPanel result={result}/>
             </Grid>
           ))}
       </Grid>

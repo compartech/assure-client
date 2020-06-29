@@ -1,4 +1,7 @@
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+
+import BaseRouter from './routes.js';
 
 import Paper from '@material-ui/core/Paper';
 import { makeStyles } from '@material-ui/core/styles';
@@ -8,15 +11,13 @@ import logo from './logo-coccinelle.png';
 import './App.css';
 import MainAppBar from './components/MainAppBar.js';
 import MainSearchInput from './components/MainSearchInput.js';
-import SearchResultsGrid from './containers/SearchResultsGrid.js';
-
 
 const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(1),
     textAlign: 'center',
     color: theme.palette.text.secondary,
-        
+
   },
 }));
 
@@ -34,10 +35,13 @@ function App() {
           Insurance comparison for : <code> Automobile / Housing / .... </code>
         </p>
         <Paper className={classes.paper} elevation={3}>
-        <MainSearchInput />
-      </Paper>
+          <MainSearchInput />
+        </Paper>
       </header>
-      <SearchResultsGrid />
+      <Router>
+        <BaseRouter />
+      </Router>
+
     </div>
   );
 }
