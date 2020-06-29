@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState, useContext } from 'react';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import InputBase from '@material-ui/core/InputBase';
 import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
+
+import AssureContext from '../context/assure-context';
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -49,9 +51,11 @@ const useStyles = makeStyles((theme) => ({
 
 export default function MainAppSearchInput() {
   const classes = useStyles();
+  const [searchText, setSearchText] = useState('');
+  const context = useContext(AssureContext);
 
   const handleSearch = () => {
-    console.log('do search');
+    context.addSearchResult(searchText);
   }
 
   return (
@@ -69,6 +73,7 @@ export default function MainAppSearchInput() {
         }}
         inputProps={{ 'aria-label': 'search' }}
         onKeyPress={(e) => e.key === 'Enter' && handleSearch()}
+        onChange={(e) => setSearchText(e.target.value)}
       />
     </div>
   );
