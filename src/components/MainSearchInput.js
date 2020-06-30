@@ -66,7 +66,7 @@ export default function MainAppSearchInput() {
         </IconButton>
       </div>
       <InputBase
-        placeholder="My insurance type ?"
+        placeholder="Insurance company ?"
         classes={{
           root: classes.inputRoot,
           input: classes.inputInput,

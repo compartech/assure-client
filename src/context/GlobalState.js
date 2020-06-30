@@ -12,6 +12,11 @@ const listResults = [{
     company: 'AXA',
     insuranceType: ['Automobile', 'Housing'],
     price: '50.000'
+},
+{
+    company: 'CAAT',
+    insuranceType: ['Automobile', 'Housing'],
+    price: '90.000'
 }];
 
 const GlobalState = (props) => {
@@ -34,16 +39,16 @@ const GlobalState = (props) => {
 
     const addSearchResult = async (searchText) => {
 
-        const searchResult = {
-            company: searchText,
-            insuranceType: ['Automobile', 'Housing'],
-            price: '50.000'
-        };
-
-        setResults(results => {
-            const list = [...results, searchResult];
-            return list;
-        });
+        if (searchText === "") {
+            setResults(listResults);
+        }
+        else {
+            setResults(results => {
+                let text = searchText.toLowerCase();
+                const list = listResults.filter((result) => result.company.toLowerCase().indexOf(text) > -1);
+                return list;
+            });    
+        }//else
     }
 
     /**
