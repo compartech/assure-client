@@ -24,6 +24,7 @@ const GlobalState = (props) => {
      * @dev State variables
      */
     const [results, setResults] = useState(listResults);
+    const [searchText, setSearchText] = useState('');
 
     /**
      * @dev UseEffect
@@ -60,6 +61,8 @@ const GlobalState = (props) => {
             results,
             setResults,
             addSearchResult,
+            searchText, 
+            setSearchText,
         }}>
             {props.children}
 

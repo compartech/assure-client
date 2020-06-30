@@ -1,11 +1,12 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import SearchResultsGrid from './containers/SearchResultsGrid.js';
+import HomePage from './pages/HomePage.js';
+import SearchPage from './pages/SearchPage.js';
     
 const BaseRouter = () => (
     <div>
-        <Route exact path='/' component={SearchResultsGrid}/>   
-        <Route exact path='/:resultID' component={SearchResultsGrid}/>   
+        <Route exact path='/' component={HomePage}/>   
+        <Route exact path='/search' component={SearchPage}/>   
     </div>
 );
 

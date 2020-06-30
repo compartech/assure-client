@@ -4,4 +4,6 @@ export default React.createContext({
     results: [],
     setResults: () => { },
     addSearchResult : () => { },
+    searchText : "", 
+    setSearchText : () => { },
 });

@@ -50,14 +50,14 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function MainAppSearchInput() {
+export default function AppBarSearchInput() {
   const classes = useStyles();
   const context = useContext(AssureContext);
   const history = useHistory();
 
   const handleSearch = () => {
-    context.addSearchResult(context.searchText);
     history.push('/search');
+    context.addSearchResult(context.searchText);
   }
 
   return (

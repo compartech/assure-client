@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -13,7 +14,7 @@ import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import GithubIcon from '@material-ui/icons/GitHub';
 import MoreIcon from '@material-ui/icons/MoreVert';
-import MainSearchInput from './MainSearchInput.js';
+import AppBarSearchInput from './AppBarSearchInput.js';
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -176,20 +177,27 @@ export default function MainAppBar() {
 
   return (
     <div className={classes.grow}>
-      <AppBar position="static">
+      <AppBar position="static"
+              style={{
+                background: "white",
+                boxShadow: "none",
+                color: "#3F3D4B"
+            }}>
         <Toolbar>
-          <IconButton
-            edge="start"
-            className={classes.menuButton}
-            color="inherit"
-            aria-label="open drawer"
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography className={classes.title} variant="h6" noWrap>
-            Assure
+             <IconButton
+              edge="start"
+              className={classes.menuButton}
+              color="inherit"
+              aria-label="open drawer"
+            >
+              <MenuIcon />
+            </IconButton> 
+          <Link to="/">
+            <Typography className={classes.title} variant="h6" noWrap>
+              Assure
           </Typography>
-          <MainSearchInput />
+          </Link>
+          <AppBarSearchInput />
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
             <IconButton aria-label="show 4 new mails" color="inherit">
