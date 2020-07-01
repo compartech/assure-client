@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { HashRouter as Router } from 'react-router-dom';
 
 import BaseRouter from './routes.js';
 import GlobalState from './context/GlobalState';
@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <GlobalState>
-        <Router>
+        <Router hashType={"noslash"}>
           <BaseRouter />
         </Router>
       </GlobalState>

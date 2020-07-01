@@ -5,6 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import logo from '../logo-coccinelle.png';
 import MainAppBar from '../components/MainAppBar.js';
 import MainSearchInput from '../components/MainSearchInput.js';
+import HilightsGrid from '../containers/HilightsGrid.js';
 
 const useStyles = makeStyles((theme) => ({
     paper: {
@@ -31,6 +32,7 @@ function HomePage() {
             <MainSearchInput />
           </Paper>
         </header>
+        <HilightsGrid />
     </div>
   );
 }

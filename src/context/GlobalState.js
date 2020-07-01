@@ -19,11 +19,25 @@ const listResults = [{
     price: '90.000'
 }];
 
+const hilightsList = [{
+    company: 'SAA',
+    announcement: "Annoucement SAA",
+    link : "/",
+    image : "/images/insurance-health.jpg"
+},
+{
+    company: 'AXA',
+    announcement: "Annoucement AXA",
+    link : "/",
+    image : "/images/insurance-business.jpg"
+}];
+
 const GlobalState = (props) => {
     /**
      * @dev State variables
      */
     const [results, setResults] = useState(listResults);
+    const [hilights, setHilights] = useState(hilightsList);
     const [searchText, setSearchText] = useState('');
 
     /**
@@ -60,6 +74,8 @@ const GlobalState = (props) => {
         <AssureContext.Provider value={{
             results,
             setResults,
+            hilights,
+            setHilights,
             addSearchResult,
             searchText, 
             setSearchText,
