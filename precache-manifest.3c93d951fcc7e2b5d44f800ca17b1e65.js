@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d5d04eadb9b310dd206042608289a55d",
+    "revision": "53d0ac8fb1ea1838589225e35e6048e8",
     "url": "/assure-client/index.html"
   },
   {
-    "revision": "64714b08ab65f1a56e53",
-    "url": "/assure-client/static/css/main.318d15dc.chunk.css"
+    "revision": "7761666d8b3f64a972fb",
+    "url": "/assure-client/static/css/main.3177a2a4.chunk.css"
   },
   {
-    "revision": "b3d46669383bd80cd3ca",
-    "url": "/assure-client/static/js/2.5e1a73c7.chunk.js"
+    "revision": "4c4d8d5a85ce148a9cb8",
+    "url": "/assure-client/static/js/2.19398626.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/assure-client/static/js/2.5e1a73c7.chunk.js.LICENSE.txt"
+    "url": "/assure-client/static/js/2.19398626.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "64714b08ab65f1a56e53",
-    "url": "/assure-client/static/js/main.b53f6fbc.chunk.js"
+    "revision": "7761666d8b3f64a972fb",
+    "url": "/assure-client/static/js/main.7229b107.chunk.js"
   },
   {
     "revision": "971be317680869621709",
