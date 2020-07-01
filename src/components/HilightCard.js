@@ -15,7 +15,7 @@ const useStyles = makeStyles({
         border: '1px solid rgba(0, 0, 0, .125)',
     },
     media: {
-        height: 40,        
+        height: 100,        
         paddingTop: '15%', // 16:9,
     },
 });

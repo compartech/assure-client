@@ -184,6 +184,7 @@ export default function MainAppBar() {
                 color: "#3F3D4B"
             }}>
         <Toolbar>
+          <Link to="/">
              <IconButton
               edge="start"
               className={classes.menuButton}
@@ -192,11 +193,10 @@ export default function MainAppBar() {
             >
               <MenuIcon />
             </IconButton> 
-          <Link to="/">
+          </Link>
             <Typography className={classes.title} variant="h6" noWrap>
               Assure
           </Typography>
-          </Link>
           <AppBarSearchInput />
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>

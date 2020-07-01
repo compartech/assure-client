@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import HilightCard from '../components/HilightCard.js';
+import MainPageMap from '../containers/MainPageMap.js';
 
 import AssureContext from '../context/assure-context';
 
@@ -21,10 +22,13 @@ export default function HilightsGrid(props) {
     <div className={classes.root}>
       <Grid container spacing={1}>
         {context.hilights.map((hilight) => (
-            <Grid item xs={12} md={6} key ={hilight.company}>
+            <Grid item xs={12} md={3} sm={6} key ={hilight.company}>
                   <HilightCard content={hilight}/>
             </Grid>
           ))}
+            <Grid item xs={12} md={6} >
+              <MainPageMap />
+            </Grid>
       </Grid>
     </div>
   );

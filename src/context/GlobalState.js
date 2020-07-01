@@ -2,42 +2,15 @@ import React, { useState, useEffect } from 'react';
 
 import AssureContext from './assure-context';
 
-
-const listResults = [{
-    company: 'SAA',
-    insuranceType: ['Automobile', 'Housing', 'Person'],
-    price: '20.000'
-},
-{
-    company: 'AXA',
-    insuranceType: ['Automobile', 'Housing'],
-    price: '50.000'
-},
-{
-    company: 'CAAT',
-    insuranceType: ['Automobile', 'Housing'],
-    price: '90.000'
-}];
-
-const hilightsList = [{
-    company: 'SAA',
-    announcement: "Annoucement SAA",
-    link : "/",
-    image : "/images/insurance-health.jpg"
-},
-{
-    company: 'AXA',
-    announcement: "Annoucement AXA",
-    link : "/",
-    image : "/images/insurance-business.jpg"
-}];
+import ListHilights from '../data/ListHilights.js';
+import ListResults from '../data/ListResults.js';
 
 const GlobalState = (props) => {
     /**
      * @dev State variables
      */
-    const [results, setResults] = useState(listResults);
-    const [hilights, setHilights] = useState(hilightsList);
+    const [results, setResults] = useState(ListResults);
+    const [hilights, setHilights] = useState(ListHilights);
     const [searchText, setSearchText] = useState('');
 
     /**
@@ -55,12 +28,12 @@ const GlobalState = (props) => {
     const addSearchResult = async (searchText) => {
 
         if (searchText === "") {
-            setResults(listResults);
+            setResults(ListResults);
         }
         else {
             setResults(results => {
                 let text = searchText.toLowerCase();
-                const list = listResults.filter((result) => result.company.toLowerCase().indexOf(text) > -1);
+                const list = ListResults.filter((result) => result.company.toLowerCase().indexOf(text) > -1);
                 return list;
             });    
         }//else
