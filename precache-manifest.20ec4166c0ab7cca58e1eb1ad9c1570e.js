@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "472e4c672a4ef3b906e985d8cd0023c6",
+    "revision": "31d8185a2f51b4a01d3db3aca89b7227",
     "url": "/assure-client/index.html"
   },
   {
-    "revision": "ed603fbad3732adec816",
+    "revision": "59ce5956a73921e28715",
     "url": "/assure-client/static/css/main.3177a2a4.chunk.css"
   },
   {
-    "revision": "59c3c5310d3cabd01ddc",
-    "url": "/assure-client/static/js/2.f1c10617.chunk.js"
+    "revision": "75abed92b8d1eec81b9a",
+    "url": "/assure-client/static/js/2.dde4618d.chunk.js"
   },
   {
     "revision": "278be41389e3536a5347a9018737729d",
-    "url": "/assure-client/static/js/2.f1c10617.chunk.js.LICENSE.txt"
+    "url": "/assure-client/static/js/2.dde4618d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ed603fbad3732adec816",
-    "url": "/assure-client/static/js/main.fa5ab78d.chunk.js"
+    "revision": "59ce5956a73921e28715",
+    "url": "/assure-client/static/js/main.27cbff49.chunk.js"
   },
   {
     "revision": "971be317680869621709",
